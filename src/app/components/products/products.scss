@@ -1,0 +1,67 @@
+.back{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2em 0;
+    background-color: var(--primary-color);
+
+    h1{
+        font-size: 1.8em;
+        color: var(--white);
+    }
+
+    .slider{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        }
+
+        button{
+            width: 2em;
+            height: 2em;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: var(--white);
+            color: var(--primary-color);
+
+            i{
+                font-size: 1em;
+            }
+        }
+
+        .carousel{
+            display: flex;
+            width: 80%;
+
+            img{
+                width: 100%;
+                border: .2em solid var(--white);
+            }
+        }
+
+        .pages{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+
+            .line{
+                width: 35%;
+                height: .1em;
+                background-color: var(--white);
+            }
+
+            h2{
+            font-size: 1.4em;
+            color: var(--white);
+        }
+        }
+    }
+
+

@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    padding: 2em;
+    background-image: url('../../../../public/assets/header-bg.png');
+    background-position: 25%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    border-bottom: .3em solid var(--black);
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #logo{
+           width: 70%;
+        }
+
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+
+             .title{
+            font-size: 3.5em;
+            font-family: 'Archivo Black', sans-serif;
+            color: var(--white);
+            }
+
+            .complete-title{
+            font-size: 1.3em;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--white);
+            text-align: center;
+            }
+
+            .shop-link{
+                background-color: var(--primary-color);
+                font-size: 1.1em;
+                padding: .5em 2.2em;
+                border-radius: 2em;
+                color: var(--white);
+                text-decoration: none;
+                border: .1em solid var(--white);
+                
+                i{
+                    margin-left: .5em;
+                }
+            }
+        }
+
+       
+    }
+
+    .nav{
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+
+        button{
+            width: 100%;
+            font-size: 1.4em;
+            background-color: var(--white);
+            text-decoration: none;
+            color: var(--primary-color);
+            border-radius: 2em;
+            text-align: center;
+            padding: .2em 0;
+            border: 0;
+            outline: 0;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

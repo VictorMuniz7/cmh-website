@@ -1,0 +1,103 @@
+.back{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+
+
+    img{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .about-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1em;
+        gap: 1.5em;
+        
+        .title{
+            font-size: 1.8em;
+            color: var(--primary-text-color);
+        }
+
+        .about{
+            font-size: 1em;
+            color: var(--secondary-text-color);
+            text-align: justify
+        }
+    }
+
+    .ideals{
+        width: 100%;
+        background: #171f5c;
+        background: linear-gradient(90deg, rgba(23, 31, 92, 1) 0%, rgba(44, 45, 125, 1) 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 2em 0;
+        color: var(--white);
+
+        h1{
+            font-size: 1.8em;
+        }
+
+        .ideal{
+            width: 90%;
+            padding-top: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1em;
+            padding: 1em 1em 2em 1em;
+            border-bottom: .2em solid var(--white);
+
+            i{
+                font-size: 3em;
+                color: var(--red);
+                text-shadow: 0 0 .2em var(--black);
+            }
+
+            h2{
+                font-size: 1.6em;
+                color: var(--white);
+                text-shadow: 0 0 .5em var(--black);
+            }
+        }
+
+        .virtue{
+          
+            ul{
+                text-align: left;
+
+                li{
+                    margin: .5em 0;
+                }
+            }
+        }
+    }
+
+     .policy{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                font-size: 1.8em;
+                text-align: center;
+                color: var(--primary-color);
+            }
+
+            .wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+}

@@ -1,0 +1,16 @@
+<div class="back">
+    <h1>Nossos produtos</h1>
+    <div class="slider">
+        <button (click)="prevSlide()"><i class="fa-solid fa-caret-left"></i></button>
+        <div class="carousel">
+            <img [src]="slides[currentIndex]" alt="Nossos produtos">
+        </div>
+        <button (click)="nextSlide()"><i class="fa-solid fa-caret-right"></i></button>
+    </div>
+    <div class="pages">
+        <div class="line"></div>
+        <h2>{{ currentIndex + 1}} / 9</h2>
+        <div class="line"></div>
+    </div>
+
+</div>
