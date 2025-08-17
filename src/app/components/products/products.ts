@@ -11,20 +11,18 @@ export class Products {
   slides: string[] = []
 
   currentIndex = 0;
-index: any;
-
 
   constructor(){
     this.slides = [
-      '/product1.png',
-      '/product2.png',
-      '/product3.png',
-      '/product4.png',
-      '/product5.png',
-      '/product6.png',
-      '/product7.png',
-      '/product8.png',
-      '/product9.png',
+      'product1.png',
+      'product2.png',
+      'product3.png',
+      'product4.png',
+      'product5.png',
+      'product6.png',
+      'product7.png',
+      'product8.png',
+      'product9.png',
     ]
   }
 
