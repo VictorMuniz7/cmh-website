@@ -16,15 +16,15 @@ index: any;
 
   constructor(){
     this.slides = [
-      'assets/slides/1.png',
-      'assets/slides/2.png',
-      'assets/slides/3.png',
-      'assets/slides/4.png',
-      'assets/slides/5.png',
-      'assets/slides/6.png',
-      'assets/slides/7.png',
-      'assets/slides/8.png',
-      'assets/slides/9.png',
+      '/product1.png',
+      '/product2.png',
+      '/product3.png',
+      '/product4.png',
+      '/product5.png',
+      '/product6.png',
+      '/product7.png',
+      '/product8.png',
+      '/product9.png',
     ]
   }
 
