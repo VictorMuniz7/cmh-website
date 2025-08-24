@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './footer.scss'
 })
 export class Footer {
+    @Output() scrollToSection = new EventEmitter<string>();
+
+  toSection(section: string){
+    this.scrollToSection.emit(section)
+  }
 
 }

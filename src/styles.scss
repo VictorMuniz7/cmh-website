@@ -1,10 +1,19 @@
+@use 'ngx-toastr/toastr';
+
+.toast {
+  z-index: 99999 !important;
+}
+
 :root{
   --primary-color: #2C2D7D;
+  --secondary-color: #5f60af;
   --primary-text-color: #3d3c3c;
   --secondary-text-color: #585757;
   --white: #ffffff;
   --black: #0e0e0e;
   --red: #F22F3C;
+  --instagram-icon-color: #E4405F;
+  --whatsapp-icon-color: #25D366;
 }
 
 *{

@@ -3,7 +3,7 @@
     <div class="slider">
         <button (click)="prevSlide()"><i class="fa-solid fa-caret-left"></i></button>
         <div class="carousel">
-            <img [src]="slides[currentIndex]" alt="Nossos produtos">
+            <img [@slideAnimation]="currentIndex" [src]="slides[currentIndex]" alt="Nossos produtos" class="active">
         </div>
         <button (click)="nextSlide()"><i class="fa-solid fa-caret-right"></i></button>
     </div>
@@ -12,5 +12,4 @@
         <h2>{{ currentIndex + 1}} / 9</h2>
         <div class="line"></div>
     </div>
-
 </div>

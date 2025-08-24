@@ -1,0 +1,63 @@
+.back{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding: 2em 0;
+
+    h1{
+        font-size: 1.8em;
+        color: var(--primary-color);
+    }
+
+    .contact-ways{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+        .contact{
+            width: 100%;
+            padding: 0 0 1em 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: var(--primary-color);
+            gap: .6em;
+            border-bottom: .3em solid var(--primary-color);
+
+            i{
+                font-size: 2.5em;
+            }
+
+            h2{
+                font-size: 1.6em;
+            }   
+
+            p{
+                font-size: 1.2em;
+                color: var(--secondary-color);
+                cursor: pointer;
+                padding: 0 .6em;
+                border-radius: .5em;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .map{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         border: .2em solid var(--primary-color);
+
+        iframe{
+            width: 100%;
+            height: 50vh;
+        }
+    }
+}
