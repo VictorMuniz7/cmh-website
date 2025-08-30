@@ -4,7 +4,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    background-color: var(--primary-color);
+    background-image: url('../../../../public/bg-blue.png');
+    background-size: cover;
     padding: 1em;
     color: var(--white);
 
@@ -26,6 +27,8 @@
         }
 
         .icons{
+            display: flex;
+            flex-direction: column;
 
             a{
                 font-size: 2.5em;
@@ -52,5 +55,131 @@
         font-size: .8em;
         text-align: center;
         text-shadow: 0 0 .1em var(--white);
+    }
+}
+
+@media (min-width: 600px) {
+    
+    .back{
+
+        .info{
+            justify-content: space-between;
+            gap: 0;
+            position: relative;
+
+            .cmh{
+                font-size: 4.5em;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .icons{
+                display: flex;
+                flex-direction: row;
+
+
+                a{
+                    font-size: 3.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+      .back{
+
+        .info{
+
+            .cmh{
+                font-size: 6em;
+                
+                &:hover{
+                    cursor: pointer;
+                    text-shadow: 0 0 .3em var(--white);
+                }
+            }
+
+            .icons{
+                display: flex;
+                flex-direction: row;
+
+
+                a{
+                    font-size: 4.2em;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        text-shadow: 0 0 .2em var(--instagram-icon-color);
+                    }
+
+                    &:first-child:hover{
+                        text-shadow: 0 0 .2em var(--whatsapp-icon-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+
+    .back{
+
+        .info{
+            justify-content: space-around;
+
+            img{
+                width: 15%;
+            }
+            
+            .cmh{
+                font-size: 6    em;
+            }
+        }
+
+        .divider{
+            height: .2em;
+            box-shadow: 0 0 .5em var(--white);
+        }
+
+        .copyright{
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+
+     .back{
+
+        .info{
+
+            img{
+                width: 12%;
+            }
+            
+            .cmh{
+                font-size: 7em;
+            }
+
+            .icons{
+
+                a{
+                    font-size: 5em;
+                }
+            }
+        }
+
+        .divider{
+            height: .25em;
+            box-shadow: 0 0 .5em var(--white);
+        }
+
+        .copyright{
+            font-size: 1.6em;
+        }
     }
 }

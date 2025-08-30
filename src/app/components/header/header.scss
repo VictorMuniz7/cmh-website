@@ -7,7 +7,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
     border-bottom: .3em solid var(--black);
 
     .container{
@@ -27,27 +27,29 @@ header{
             gap: 1em;
 
              .title{
-            font-size: 3.5em;
-            font-family: 'Archivo Black', sans-serif;
-            color: var(--white);
+                font-size: 3.5em;
+                font-family: 'Archivo Black', sans-serif;
+                color: var(--white);    
+                text-shadow: 0 0 .2em var(--white);
             }
 
             .complete-title{
-            font-size: 1.3em;
-            text-transform: uppercase;
-            font-family: 'Roboto Condensed', sans-serif;
-            color: var(--white);
-            text-align: center;
+                font-size: 1.4em;
+                text-transform: uppercase;
+                font-family: 'Roboto Condensed', sans-serif;
+                color: var(--white);
+                text-align: center;
             }
 
             .shop-link{
                 background-color: var(--primary-color);
-                font-size: 1.1em;
+                font-size: 1.4em;
                 padding: .5em 2.2em;
                 border-radius: 2em;
                 color: var(--white);
                 text-decoration: none;
                 border: .1em solid var(--white);
+                white-space: nowrap;
                 
                 i{
                     margin-left: .5em;
@@ -69,7 +71,7 @@ header{
 
         button{
             width: 100%;
-            font-size: 1.4em;
+            font-size: 1.2em;
             background-color: var(--white);
             text-decoration: none;
             color: var(--primary-color);
@@ -78,10 +80,213 @@ header{
             padding: .2em 0;
             border: 0;
             outline: 0;
+            box-shadow: 0 0 .4em var(--white);
+            white-space: nowrap;
             
             &:hover{
                 cursor: pointer;
             }
         }
     }
+}
+
+
+@media (min-width: 480px) {
+
+    header{
+
+        .container{
+
+            #logo{
+                width: 50%;
+            }
+        }
+
+        .nav{
+
+            button{
+                font-size: 1.4em;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    header{
+
+        .container{
+
+            .title-container{
+
+                .title{
+                    font-size: 5em;
+                    text-shadow: 0 0 .15em var(--white);
+                }
+
+                .complete-title{
+                    font-size: 2em;
+                }
+
+                .shop-link{
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        .nav{
+            width: 80%;
+
+            button{
+                font-size: 1.4em;
+            }
+           
+        }
+    }
+
+}
+
+@media (min-width: 750px) {
+
+    header{
+
+        .container{
+
+            #logo{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+    header{
+
+        .container{
+
+            .title-container{
+
+                .title{
+                    font-size: 6em;
+                    text-shadow: 0 0 .1em var(--white);
+                }
+
+                .complete-title{
+                    font-size: 2.4em;
+                }
+
+                .shop-link{
+                    display: inline-block;
+                    width: 14em;
+                    font-size: 1.7em;
+                    transition: all 0.7s ease;
+
+                    i{
+                        transition: all .7s ease-in-out;
+                    }
+                    
+                    &:hover{
+                        width: 15em;
+                        background-color: var(--white);
+                        color: var(--primary-color);
+                        border: .1em solid var(--primary-color);
+
+                        i{
+                            transform: translateX(180%);
+                            transition: all .7s ease-in-out;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .nav{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            button{
+                width: 45%;
+                font-size: 1.7em;
+                transition: all .2s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: var(--primary-color);
+                    color: var(--white);
+                    box-shadow: 0 0 .4em var(--primary-color);
+                    transition: all .4s ease-in-out;
+                }
+            }
+           
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+
+     header{
+        padding: 2em 4em 4em 4em;
+
+        .container{
+
+            #logo{
+                width: 20%;
+            }
+
+            .title-container{
+
+                .shop-link{
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .nav{
+
+            button{
+                height: 1.8em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+
+    header{
+        border-bottom: .8em solid var(--black);
+        
+        .container{
+
+            .title-container{
+                
+                .title{
+                    font-size: 6.6em;
+                }
+
+                .complete-title{
+                    font-size: 2.6em;
+                }
+
+                .shop-link{
+                    font-size: 2.1em;
+                    margin-top: .8em;
+                }
+            }
+        }
+
+        .nav{
+            width: 60%;
+            gap: 3em;
+
+            button{
+                width: 30%;
+                height: 2em;
+                font-size: 2em;
+            }
+        }
+    }
+
 }

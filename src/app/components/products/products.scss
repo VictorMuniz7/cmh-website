@@ -5,11 +5,13 @@
     align-items: center;
     gap: 1em;
     padding: 2em 0;
-    background-color: var(--primary-color);
+    background-image: url('../../../../public/bg-blue.png');
+    background-size: cover;
 
     h1{
         font-size: 1.8em;
         color: var(--white);
+        text-align: center;
     }
 
     .slider{
@@ -17,7 +19,6 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        }
 
         button{
             width: 2em;
@@ -49,25 +50,115 @@
                 }
             }
         }
+    }
 
+        
+
+    .pages{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        .line{
+            width: 35%;
+            height: .1em;
+            background-color: var(--white);
+        }
+
+        h2{
+        font-size: 1.4em;
+        color: var(--white);
+        }
+    }
+}
+
+@media (min-width: 600px) {
+
+    .back{
+
+        h1{
+            font-size: 2.4em;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+    .back{
+
+        h1{
+            font-size: 2.8em;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+
+    .back{
+        padding: 4em 0;
+        gap: 4em;
+
+        h1{
+            font-size: 3.2em;
+        }
+
+        .slider{
+
+            button{
+                width: 5em;
+                height: 5em;
+
+                i{
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+        
         .pages{
-            width: 90%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1em;
 
             .line{
-                width: 35%;
-                height: .1em;
-                background-color: var(--white);
+                height: .3em;
             }
 
             h2{
-            font-size: 1.4em;
-            color: var(--white);
-        }
+                font-size: 2em;
+            }
         }
     }
+}
 
+@media (min-width: 1700px) {
 
+    .back{
+
+        h1{
+            font-size: 4em;
+        }
+
+        .slider{
+            width: 70%;
+
+            button{
+                width: 5.5em;
+                height: 5.5em;
+                transition: all .3s ease-in-out;
+                
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all .3s ease-in-out;
+                }
+
+                i{
+                    font-size: 3em;
+                }
+            }
+
+            .carousel{
+                width: 70%;
+            }
+        }
+    }
+}
