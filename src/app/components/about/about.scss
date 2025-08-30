@@ -438,29 +438,17 @@
 
                 img{
                     width: 30%;
-                    animation: secondCardMovingAnimation 20s infinite;
+                }
 
-                    &:first-child{
-                        animation: firstCardMovingAnimation 20s infinite;
-                    }
+                .img-1{
+                    animation: firstCardMovingAnimation 20s infinite;
+                }
+
+                .img-2{
+                    animation: secondCardMovingAnimation 20s infinite;
                 }
             }
         }
-    }
-}
-
-@keyframes beatAnimation {
-    
-    0%{
-        transform: none;
-    }
-
-    50%{
-        transform: translateY(-.5em);
-    }
-
-    100%{
-        transform: none;        
     }
 }
 
@@ -619,5 +607,20 @@
 
     100%{
         transform: translate(0, 0);
+    }
+}
+
+@keyframes beatAnimation {
+    
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: translateY(-.5em);
+    }
+
+    100%{
+        transform: none;        
     }
 }
