@@ -262,21 +262,22 @@
 
     .back{
         
-        .about-section{
-            padding: 4em 14em;
+       .about-section{
+            display: flex;
+            justify-content: space-around;
+            gap: 4em;
+            padding: 2em 2em;
 
             div{
-
-                .title{
-                    font-size: 3.2em;
-                }
-
-                .about{
-                    font-size: 1.8em;
-                } 
+                width: 80%;
             }
 
-            
+            img{
+                display: block;
+                width: 36%;
+                border-radius: 2em;
+                box-shadow: .8em .8em 1.5em rgba(0, 0, 0, 0.4);
+            }
         }
 
         .ideals-container{
@@ -312,6 +313,37 @@
                         }
                     }
                 }
+
+                .virtue{
+                    width: 100%;
+
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        gap: .4em; 
+
+                        li{
+                            width: 22%;
+                            font-size: 1.6em;
+                            list-style: none;
+                            text-align: center;
+                            padding: .4em;
+                            background-color: var(--white);
+                            color: var(--primary-color);
+                            box-shadow: .3em .3em 1em rgba(0, 0, 0, 0.5);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: .2em;
+                            cursor: default;
+
+                            &:hover{
+                                animation: beatAnimation 1.5s ease-in-out infinite;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -344,38 +376,9 @@
             margin: 0 auto;
         }
 
-        .about-section{
-            display: flex;
-            justify-content: space-around;
-            gap: 4em;
-            padding: 2em 2em;
-
-            div{
-                width: 80%;
-
-                .title{
-                    font-size: 4em;
-                }
-
-                .about{
-                    font-size: 2em;
-                }
-            }
-
-            img{
-                display: block;
-                width: 36%;
-                border-radius: 2em;
-                box-shadow: .8em .8em 1.5em rgba(0, 0, 0, 0.4);
-            }
-        }
 
         .ideals-container{
             padding: 4em 3em;
-
-            h1{
-                font-size: 4em;
-            }
 
             .ideals{
                 gap: 2em;
@@ -383,50 +386,12 @@
                 .ideal{
                     width: 45%;
                     align-self: flex-start;
-
-                    i{
-                        font-size: 5.5em;
-                    }
-
-                    h2{
-                        font-size: 2.4em;
-                    }
-
-                    p{
-                        font-size: 1.6em;
-                    }
                 }
 
                 .virtue{
                     width: 100%;
-
-                    ul{
-                        display: flex;
-                        justify-content: space-around;
-                        flex-wrap: wrap;
-                        gap: .4em; 
-
-                        li{
-                            width: 22%;
-                            font-size: 1.6em;
-                            list-style: none;
-                            text-align: center;
-                            padding: .4em;
-                            background-color: var(--white);
-                            color: var(--primary-color);
-                            box-shadow: .3em .3em 1em rgba(0, 0, 0, 0.5);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            border-radius: .2em;
-                            cursor: default;
-
-                            &:hover{
-                                animation: beatAnimation 1.5s ease-in-out infinite;
-                            }
-                        }
-                    }
                 }
+                
             }
         }
 
