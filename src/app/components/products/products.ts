@@ -34,15 +34,15 @@ export class Products {
 
   constructor(){
     this.slides = [
-      'product1.png',
-      'product2.png',
-      'product3.png',
-      'product4.png',
-      'product5.png',
-      'product6.png',
-      'product7.png',
-      'product8.png',
-      'product9.png',
+      'product1.webp',
+      'product2.webp',
+      'product3.webp',
+      'product4.webp',
+      'product5.webp',
+      'product6.webp',
+      'product7.webp',
+      'product8.webp',
+      'product9.webp',
     ]
   }
 

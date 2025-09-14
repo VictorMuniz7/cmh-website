@@ -43,6 +43,10 @@
           },
           "configurations": {
             "production": {
+              "optimization": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -93,7 +97,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "public/robots.txt"
             ],
             "styles": [
               "src/styles.scss"

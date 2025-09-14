@@ -1,11 +1,11 @@
 <div class="back">
     <h1>Nossos produtos</h1>
     <div class="slider">
-        <button (click)="prevSlide()"><i class="fa-solid fa-caret-left"></i></button>
+        <button (click)="prevSlide()" aria-label="Item anterior"><i class="fa-solid fa-caret-left"></i></button>
         <div class="carousel">
-            <img [@slideAnimation]="currentIndex" [src]="slides[currentIndex]" alt="Nossos produtos" class="active">
+            <img [@slideAnimation]="currentIndex" loading="lazy" [src]="slides[currentIndex]" alt="Nossos produtos" class="active">
         </div>
-        <button (click)="nextSlide()"><i class="fa-solid fa-caret-right"></i></button>
+        <button (click)="nextSlide()" aria-label="Próximo item"><i class="fa-solid fa-caret-right"></i></button>
     </div>
     <div class="pages">
         <div class="line"></div>
