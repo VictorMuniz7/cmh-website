@@ -1,0 +1,63 @@
+header{
+    background-image: url('../../../../public/header-bg.webp');
+    background-position: 25%;
+    background-size: cover;
+
+    .container{
+
+        #logo{
+           width: 70%;
+        }
+    }
+
+    
+
+    .title-container{
+
+        .title{
+            font-size: 3.5em;
+            font-family: 'Archivo Black', sans-serif;
+            color: var(--white);    
+            text-shadow: 0 0 .2em var(--white);
+        }
+    }
+}
+
+@media (min-width: 480px) {
+
+    header{
+
+        .container{
+
+            #logo{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+
+    header{
+
+        .container{
+
+            #logo{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+
+     header{
+        
+        .container{
+
+            #logo{
+                width: 20%;
+            }
+        }
+    }
+}

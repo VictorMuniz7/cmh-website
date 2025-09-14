@@ -42,6 +42,10 @@ header{
             }
 
             .shop-link{
+                display: inline-flex;
+                align-items: center;
+                line-height: 1;
+                gap: 0.5em;
                 background-color: var(--primary-color);
                 font-size: 1.4em;
                 padding: .5em 2.2em;
@@ -50,9 +54,17 @@ header{
                 text-decoration: none;
                 border: .1em solid var(--white);
                 white-space: nowrap;
-                
-                i{
-                    margin-left: .5em;
+                outline: 0;
+                display: inline-flex;
+                align-items: center;
+         
+                .icon-shop{
+                    width: 1m;
+                    height: 1em;
+                    fill: var(--white);
+                    flex-shrink: 0;
+                    display: inline-block;
+                    vertical-align: text-bottom;
                 }
             }
         }
@@ -183,8 +195,11 @@ header{
                     font-size: 1.7em;
                     transition: all 0.7s ease;
 
-                    i{
+                    .icon-shop{
                         transition: all .7s ease-in-out;
+                        width: 1.2em;
+                        height: 1.2em;
+                        margin-left: .5em;
                     }
                     
                     &:hover{
@@ -193,9 +208,10 @@ header{
                         color: var(--primary-color);
                         border: .1em solid var(--primary-color);
 
-                        i{
+                        .icon-shop{
                             transform: translateX(180%);
                             transition: all .7s ease-in-out;
+                            fill: var(--primary-color);
                         }
                     }
 
